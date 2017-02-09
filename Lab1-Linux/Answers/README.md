@@ -15,7 +15,8 @@ what this will do is to find files without the subdirectory snapshot
 lines, but you can specified the number of lines you want it to print.
 7.The option -f in the command tail shows the last 10 lines of the document and it keeps track of it, this means that it prints the new lines of the document. 
 
-8.command link creates a file related to a existing file  
+8.command link creates a file related to a existing file. Therefore the changes made in the file created are going to change the file it is linked to. 
+
 
 
 
@@ -31,5 +32,11 @@ lines, but you can specified the number of lines you want it to print.
 
 
 References
-
+http://stackoverflow.com/questions/1489277/how-to-use-prune-option-of-find-in-sh
+https://www.howtoforge.com/faq/how-to-edit-files-on-the-command-line
+http://www.computerhope.com/unix/ucut.htm
+http://www.computerhope.com/unix/rsync.htm
+http://www.computerhope.com/unix/udiff.htm
+http://www.computerhope.com/unix/utail.htm
+http://www.computerhope.com/unix/link.htm
 
