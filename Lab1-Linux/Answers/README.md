@@ -17,6 +17,7 @@ lines, but you can specified the number of lines you want it to print.
 
 8.command link creates a file related to a existing file. Therefore the changes made in the file created are going to change the file it is linked to. 
 
+9.When there is  #!/bin/bash at the first line of a script this is telling the system to use bash as a default shell. and bash is one of Unix shells and command languages. 
 
 
 
@@ -39,4 +40,4 @@ http://www.computerhope.com/unix/rsync.htm
 http://www.computerhope.com/unix/udiff.htm
 http://www.computerhope.com/unix/utail.htm
 http://www.computerhope.com/unix/link.htm
-
+http://stackoverflow.com/questions/13872048/bash-script-what-does-bin-bash-mean
