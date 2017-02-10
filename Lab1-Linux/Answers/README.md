@@ -14,7 +14,7 @@ Example: find . -path './media' -prune -o -print
 Retrieved from: http://www.liamdelahunty.com/tips/linux_find_prune_directory.php
 Retrieved from: http://www.liamdelahunty.com/tips/linux_find_exclude_multiple_directories.php
 
-3. cut: The cut command is used in linux to extract a portion od text from a file by selecting columns. The command has very useful options like select the column using start or end position, using a range, delimit the selection, among other. 
+3. cut: The cut command is used in linux to extract a portion of text from a file by selecting columns. The command has very useful options like select the column using start or end position, using a range, delimit the selection, among other. 
 Retrieved from: http://www.thegeekstuff.com/2013/06/cut-command-examples
 
 4. rsync: This command is commonly used to perform backups and mirroring between two Linux machines, as it permits copying ans synchronizing local or remote files and directories.
@@ -32,7 +32,19 @@ Retrieved from: http://www.computerhope.com/unix/utail.htm
 8. link: The command link allows the user to link two files. This means that any changes that occurred with either of these files would affect the othe file or link.
 Retrieved from: http://www.computerhope.com/unix/link.htm
 
-9. #! /bin/bash: It's a convention for the kernel to know what kind of interpreter (a software to translate to source code to machine languaje). The "/bash" stands for the Bash enviroment as "/python" or "/pearl" stands for the python and pearl enviroment respectively
+9. #! /bin/bash: It's a convention for the kernel to know what kind of interpreter (a software to translate to source code to machine languaje) to use. The "/bash" stands for the Bash enviroment as "/python" or "/pearl" stands for the python and pearl enviroment respectively.
+
+10. In the course server exist 8 users. To find out this information we logged into the server and then went to cd /home, and finally we press ls and there are 8 folders, each one with a name in it. Therefore we asumed those where the server users. 
+
+11. 
+
+12. 
+
+
+
+
+
+
 
 
 
