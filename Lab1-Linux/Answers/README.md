@@ -54,8 +54,8 @@ cd
 #find images in the current directory and creates the array "images"  
  images=$(find ./ -type f \( -iname \*.jpg -o -iname \*.png\))
 
-#sum of bytes of all images 
-imagescar = cksum $(images)
+#Array of specific numbers to each image 
+ imagescar = ($(cksum ${images[@]}))
 
 
 
@@ -63,15 +63,15 @@ for i in ${imagescar[*]}
 for j in ${imagescar[*]}
   if [${imagescar[i]} -eq ${imagescar[j]} | i -ne j]
 
-echo ${imagescar[i]} is duplicated 
+echo ${imagescar[i]} is duplicated
 
-else 
+else
 
      ${imagescar[i]} is not duplicated
 
-fi 
+fi
 
-done 
+done  
 ```
 14. The size of the uncompressed BSR dataset is 73.6 Mb. On the specified route there is 503 picture files divide into 3 folders (train, test and val)
 
