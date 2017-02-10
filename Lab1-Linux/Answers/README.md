@@ -1,43 +1,50 @@
-1.Command grep is used for serch matching strings in a file. So you can search for a word. And depending on its options you can get a lot of properties of the strings you are looking for.
+Laboratory 1 - Answers
 
-2.The -prune option of the command find is used to not including subdirectories when you are looking for a file.
-Example>
-find -name .snapshot -prune -o -name '*.foo' -print
-what this will do is to find files without the subdirectory snapshot 
+Mariajosé Serna A.
+Henry Daniel Torres A.
 
-3.Command cute its used to cut out sections of a file, which also depends on the options. 
+1. grep: The grep command on unix-based operating allows the user to search a certain text(char or string) on a given file. The result is a display of the matching lines on the file that contains the searched text. 
+Retrieved from: https://www.cyberciti.biz/faq/howto-use-grep-command-in-linux-unix/ 
 
-4.Command rsync is used for copying files. It is a replacement for the command rcpand it has a lot of options that contorol every aspect of its behavior and it allows very specification of the set of files to be copied. 
+2. find -prune: The prune option allows the user to ignore a given proceding path. 
+Example: find . -path './media' -prune -o -print
+*Finds all files in the directory(.)
+*prune(ignore) the proceding path of './media'
+*THen if no match print (prune or print)
+Retrieved from: http://www.liamdelahunty.com/tips/linux_find_prune_directory.php
+Retrieved from: http://www.liamdelahunty.com/tips/linux_find_exclude_multiple_directories.php
 
-5.Command diff compares two different files and shows the lines that are different  
+3. cut: The cut command is used in linux to extract a portion od text from a file by selecting columns. The command has very useful options like select the column using start or end position, using a range, delimit the selection, among other. 
+Retrieved from: http://www.thegeekstuff.com/2013/06/cut-command-examples
 
-6.Command tail shows the last lines of a file. By default it prints the last 10 
-lines, but you can specified the number of lines you want it to print.
-7.The option -f in the command tail shows the last 10 lines of the document and it keeps track of it, this means that it prints the new lines of the document. 
+4. rsync: This command is commonly used to perform backups and mirroring between two Linux machines, as it permits copying ans synchronizing local or remote files and directories.
+Retrieved from: http://www.tecmint.com/rsync-local-remote-file-synchronization-commands/
 
-8.command link creates a file related to a existing file. Therefore the changes made in the file created are going to change the file it is linked to. 
+5. diff: The function of this command is to analyze two files and print the lines that are different. 
+Retrieved from: http://www.computerhope.com/unix/udiff.htm
 
-9.When there is  #!/bin/bash at the first line of a script this is telling the system to use bash as a default shell. and bash is one of Unix shells and command languages. 
+6. tail: tail command prints the last 10 lines(the tile) of a given file or set of files.
+Retrieved from: http://www.computerhope.com/unix/utail.htm
 
+7. tail -f: This option outputs the last 10 lines of the given file and monitors it to continue to output any new lines that are added.
+Retrieved from: http://www.computerhope.com/unix/utail.htm
 
+8. link: The command link allows the user to link two files. This means that any changes that occurred with either of these files would affect the othe file or link.
+Retrieved from: http://www.computerhope.com/unix/link.htm
 
-
-
-
-
-
-
-
-
-
+9. #! /bin/bash: It's a convention for the kernel to know what kind of interpreter (a software to translate to source code to machine languaje). The "/bash" stands for the Bash enviroment as "/python" or "/pearl" stands for the python and pearl enviroment respectively
 
 
-References
-http://stackoverflow.com/questions/1489277/how-to-use-prune-option-of-find-in-sh
-https://www.howtoforge.com/faq/how-to-edit-files-on-the-command-line
-http://www.computerhope.com/unix/ucut.htm
-http://www.computerhope.com/unix/rsync.htm
-http://www.computerhope.com/unix/udiff.htm
-http://www.computerhope.com/unix/utail.htm
-http://www.computerhope.com/unix/link.htm
-http://stackoverflow.com/questions/13872048/bash-script-what-does-bin-bash-mean
+
+
+
+
+
+
+
+
+
+
+
+
+
