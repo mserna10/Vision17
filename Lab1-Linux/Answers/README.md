@@ -51,7 +51,7 @@ cd
 
 #
 #find images in the current directory 
- images=$(find ./ -type f \( -iname \*.jpg -o -iname \*.png\))
+ images=$(find ./ -type f \( -iname \*.jpg -o -iname \*.png \))
 
 #sum of bytes of all images 
 imagescar =$(cksum images)
