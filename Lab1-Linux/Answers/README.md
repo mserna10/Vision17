@@ -43,18 +43,17 @@ retrieved from:
 cut -d : -f1,7 /etc/passwd | sort -t : -k2 > shell.sorted --> organized names
 
 12. 
--------------------------------------------------------------------------------------------
 #!/bin/bash
-# Finding_duplicate_images
+#Finding_duplicate_images
 
-# Current directory
+#Current directory
 cd
 
 #
-# find images in the current directory 
+#find images in the current directory 
  images=$(find ./ -type f \( -iname \*.jpg -o -iname \*.png\))
 
-# sum of bytes of all images 
+#sum of bytes of all images 
 imagescar =$(cksum images)
 
 
@@ -72,7 +71,7 @@ else
 fi 
 
 done 
-----------------------------------------------------------------------------------------------
+
 14. The size of the uncompressed BSR dataset is 73.6 Mb. On the specified route there is 503 picture files divide into 3 folders (train, test and val)
 
 
