@@ -34,15 +34,57 @@ Retrieved from: http://www.computerhope.com/unix/link.htm
 
 9. #! /bin/bash: It's a convention for the kernel to know what kind of interpreter (a software to translate to source code to machine languaje) to use. The "/bash" stands for the Bash enviroment as "/python" or "/pearl" stands for the python and pearl enviroment respectively.
 
-10. In the course server exist 8 users. To find out this information we logged into the server and then went to cd /home, and finally we press ls and there are 8 folders, each one with a name in it. Therefore we asumed those where the server users. 
+10. In the course server exist 40 users. To find out this information we logged into the server and then enter the command cat /etc/passwd
 
-11. 
+retrieved from: 
+
+11. cut -d : -f1,7 /etc/passwd | sort -t : -k2 
+
+cut -d : -f1,7 /etc/passwd | sort -t : -k2 > shell.sorted --> organized names
 
 12. 
+####################----------------------------------------------
+#!/bin/bash
+# Finding_duplicate_images
+
+# Current directory
+cd
+
+#
+# find images in the current directory 
+ images=$(find ./ -type f \( -iname \*.jpg -o -iname \*.png\))
+
+# sum of bytes of all images 
+imagescar =$(cksum images)
 
 
 
+for i in ${imagescar[*]}
+for j in ${imagescar[*]}
+  if [${imagescar[i]} -eq ${imagescar[j]} | i -ne j]
 
+echo ${imagescar[i]} is duplicated 
+
+else 
+
+     ${imagescar[i]} is not duplicated
+
+fi 
+
+done 
+########------------------------------------------------------
+14. The size of the uncompressed BSR dataset is 73.6 Mb. On the specified route there is 503 picture files divide into 3 folders (train, test and val)
+
+
+15. The images have a .jpg format and some of them exhibit a size of 321x481 pixels and others 481x321 pixels.
+
+
+16. In the entire database there are 351 images on landscape orientation.
+
+
+17. cd your/path/to/images | convert '*.jpg[256x256]' imagen%.jpg
+
+http://www.imagemagick.org/script/index.php
 
 
 
